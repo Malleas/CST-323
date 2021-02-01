@@ -17,7 +17,7 @@ A lot of the functionality is the same for a basic website.
             </li>
 
             <?php
-            if (isset($_SESSION['userID']) && $_SESSION['role'] == 4) {
+            if (isset($_SESSION['userID'])) {
                 ?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -26,11 +26,7 @@ A lot of the functionality is the same for a basic website.
                         Admin
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/CST323/index.php">Foo</a>
-                        <a class="dropdown-item" href="/CST323/index.php">Bar</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/CST323/index.php">Add New Foo</a>
-                        <a class="dropdown-item" href="/CST323/index.php">Other Stuff</a>
+                        <a class="dropdown-item" href="/CST323/presentation/views/user/UserAdmin.php">Users</a>
                     </div>
                 </li>
                 <?php
